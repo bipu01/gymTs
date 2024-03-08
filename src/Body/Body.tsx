@@ -1,57 +1,53 @@
+import { PrimaryButton, SecondaryButton } from "../components/Buttons"
 
 const Body = () => {
   return (
-    <div className=" grid grid-rows md:pl-8 align-middle">
-        <section
-            className="relative bg-gray-900 max-w-6xl px-8 py-14 h-screen grid  md:grid-cols-2  mx-auto overflow-hidden">
-            <div className="block sm:absolute -right-20% md:-right-10% lg:-right-5%">
-                <img src="fitness_model.png" alt="Fitness Model" className="rounded-lg mb-8 md:mb-0"/>
-            </div>
-            
-            <div className="md:mt-20 mt-20 w-70% md:w-100% left-5% z-10 absolute sm:static">
-                <h1 className="text-4xl sm:text-7xl font-bold mb-4 align-middle">Invest in Your Fitness</h1>
-                <p className="mb-8 opacity-70 drop-shadow-3xl">Investing in your fitness is an investment in your overall
-                    well-being.
-                    healthy
-                    body and mind can help you achieve your goals and live a fulfilling life. Our dedicated
-                    team
-                    of professionals is here to guide you on your fitness journey, providing personalized
-                    support and motivation every step of the way.
-                </p>
-            </div>
-
-            <div className="absolute top-75% left-10 flex space-x-4 text-lg sm:text-2xl text-black ">
-                <button className="bg-orange-400 hover:bg-orange-600 py-1 px-2 sm:py-3 sm:px-8 rounded">Enroll Now
-                </button>
-                <a href="#" className="text-orange-500 hover:text-orange-600">See more</a>
-            </div>
-
-
-        </section>
-
-        <section className="relative max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-8 md:mt-8">
-            <div className="relative w-full sm:static">
-                <img src="trainer.png" alt="Personal Trainer" className="relative rounded-lg shadow-lg object-cover"/>
-                <div
-                    className="absolute visible inset-0 bg-gradient-to-b from-black to-transparent opacity-50 md:opacity-0">
+    <div className="flex flex-col overflow-auto max-w-7xl lg:mx-15% justify-center">
+        <section className="relative md:h-screen ml-4 md:ml-8 overflow-hidden ">
+            <div className="">
+                <div className="grid grid-cols-2 ">
+                    <div className=" col-span-1">
+                        <h1 className="font-bold text-5xl md:text-7xl mt-30% lg:mt-15% opacity-80 ">Invest in Your Fitness</h1>
+                    </div>
+                    <div>
+                    <img src="fitness_model.png" alt="Fitness Model" className="absolute -right-10% z-0 bg-cover" />
+                    </div>
+                </div>
+                <div className="">
+                    <p className="mt-45% text-sm lg:text-lg xsm:mt-50% md:mt-5% w-95% md:w-60% lg:w-40% opacity-70">Investing in your fitness is an investment in your overall
+                        well-being.
+                        healthy
+                        body and mind can help you achieve your goals and live a fulfilling life. Our dedicated
+                        team
+                        of professionals is here to guide you on your fitness journey, providing personalized
+                        support and motivation every step of the way.
+                    </p>
                 </div>
             </div>
-            <div className="absolute w-75% sm:max-w-lg top-10% md:top-40% left-15% md:static ">
-                <h1 className="text-4xl sm:text-6xl font-bold mb-4">Get your <span className="text-orange-400 ">personal
+
+            <div className="flex gap-4 lg:gap-8 absolute top-50% xsm:top-50% md:top-70% ">
+                <PrimaryButton text={"Enroll Now"} />
+                <SecondaryButton text={"See more"} />
+            </div>
+        </section>
+
+        <section className="">
+            <div className="">
+                <img src="trainer.png" alt="Personal Trainer" className=""/>
+                <div className=""></div>
+            </div>
+            <div className="">
+                <h1 className="">Get your <span>personal
                         trainer</span></h1>
-                <p className="mb-8 opacity-90 md:opacity-70">Allow us to find the best in you. Give yourself a treat you
+                <p className="">Allow us to find the best in you. Give yourself a treat you
                     deserve.
                     Healthy body
                     looks and feels different. When you treat yourself right, you see your complete self.</p>
             </div>
-            <button
-                className="absolute top-90% left-40% md:left-10 md:top-85% bg-orange-400 hover:bg-orange-600 py-1 px-3 sm:py-3 sm:px-8 rounded text-lg sm:text-2xl text-black ">
-                Book one
-            </button>
+            <PrimaryButton text={"Book one"}/>
         </section>
-
     </div>
-  )
+    )
 }
 
 export default Body
