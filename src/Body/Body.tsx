@@ -1,6 +1,8 @@
 import { PrimaryButton, SecondaryButton } from "../components/Buttons"
 
 const Body = () => {
+    // let paragraphStyles = "";
+
   return (
     <div className="flex flex-col overflow-auto max-w-7xl lg:mx-15% justify-center">
         <section className="relative md:h-screen ml-4 md:ml-8 overflow-hidden ">
