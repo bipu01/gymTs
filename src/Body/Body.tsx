@@ -12,7 +12,7 @@ const Body = () => {
                         <h1 className="font-bold text-5xl md:text-7xl mt-30% lg:mt-15% opacity-80 ">Invest in Your Fitness</h1>
                     </div>
                     <div>
-                    <img src="fitness_model.png" alt="Fitness Model" className="absolute -right-10% z-0 bg-cover" />
+                    <img src="/fitness_model.png" alt="Fitness Model" className="absolute -right-10% z-0 bg-cover" />
                     </div>
                 </div>
                 <div className="">
@@ -35,7 +35,7 @@ const Body = () => {
 
         <section className="">
             <div className="">
-                <img src="trainer.png" alt="Personal Trainer" className=""/>
+                <img src="/trainer.png" alt="Personal Trainer" className=""/>
                 <div className=""></div>
             </div>
             <div className="">
