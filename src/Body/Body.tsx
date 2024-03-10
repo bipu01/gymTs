@@ -35,8 +35,8 @@ const Body = () => {
                 </div>
             </div>
         </section>
-        <section className="relative mt-8 h-80vh overflow-x-hidden">
-            <div className="relative sm:absolute sm:left-55% md:w-40vw md:h-45vw">
+        <section className="relative mt-8 h-80vh overflow-hidden">
+            <div className="relative sm:absolute sm:left-50% md:w-40vw md:h-45vw">
                 <img src="/trainer.png" alt="Personal Trainer" className="bg-cover sm:aspect-square "/>
                 <div className="absolute sm:hidden inset-0 w-full h-100% bg-gradient-to-b  from-slate-900 to-transparent opacity-50"></div>
             </div>
