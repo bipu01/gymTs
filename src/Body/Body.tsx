@@ -35,13 +35,13 @@ const Body = () => {
                 </div>
             </div>
         </section>
-        <section className="relative mt-12 h-80vh overflow-hidden ">
-            <div className="relative sm:absolute sm:left-50% md:w-40vw md:h-45vw">
+        <section className="relative mt-16 h-80vh overflow-hidden">
+            <div className="relative max-w-imgWidth md:max-w-60vw sm:absolute sm:left-50% md:w-40vw md:h-45vw">
                 <img src="/trainer.png" alt="Personal Trainer" className="bg-cover sm:aspect-square "/>
                 <div className="absolute sm:hidden inset-0 w-full h-100% bg-gradient-to-b  from-slate-900 via-transparent to-transparent opacity-50"></div>
             </div>
-            <div className="sm:w-50%">
-                <h1 className="absolute top-5% left-5%  sm:static text-4xl sm:text-5xl w-80% font-bold">Get your <div className="text-orange-400 " >personal
+            <div className="sm:w-50% px-2 md:px-0 ">
+                <h1 className="absolute top-5% sm:static text-4xl sm:text-5xl w-80% font-bold">Get your <div className="text-orange-400 " >personal
                 trainer</div>
                 </h1>
                 <p className=" text-sm opacity-70 mt-10 lg:text-lg">Allow us to find the best in you. Give yourself a treat you

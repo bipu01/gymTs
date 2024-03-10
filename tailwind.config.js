@@ -19,6 +19,7 @@ export default {
       //   "hero-image": "url('/fitness_model.png')",
       // }),
       spacing: {
+        "imgWidth": "410px",
         "onePage": "780px",
         "maxWidth": "1300px",
         "0%": "0%",
