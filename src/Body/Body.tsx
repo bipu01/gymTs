@@ -4,11 +4,11 @@ const Body = () => {
     // let paragraphStyles = "";
 
   return (
-    <div className="flex flex-col lg:mx-15% 3xl:mx-30% ">
-        <section className="relative  ml-4 xmd:ml-16 h-onePage lg:h-onePage overflow-x-hidden overflow-y-hidden">
+    <div className="flex flex-col lg:mx-15vw px-2 sm:px-8 ">
+        <section className="relative h-75vh lg:h-onePage overflow-x-hidden overflow-y-hidden">
             <div className="">
                 <div className="">
-                    <img src="/fitness_model.png" alt="Fitness Model" className="absolute -right-10% z-0" />
+                    <img src="/fitness_model.png" alt="Fitness Model" className="absolute -right-5vw lg:left-20vw xl:left-25vw  z-0" />
                 </div>
                 <div className="grid grid-cols-2 grid-rows-2 relative overflow-hidden h-96">
                     <div className=" col-span-1">
@@ -16,7 +16,7 @@ const Body = () => {
                     </div>
                     <div className=" row-span-2">
                     </div>
-                    <div className="flex gap-4 lg:gap-8 absolute top-80% xsm:top- xmd:top-80% lg:top-90% ">
+                    <div className="flex gap-4 lg:gap-8 absolute top-80% xmd:top-80% lg:top-90% ">
                         <PrimaryButton text={"Enroll Now"} />
                         <SecondaryButton text={"See more"} />
                     </div>
@@ -35,23 +35,24 @@ const Body = () => {
                 </div>
             </div>
         </section>
-        <section className="relative mt-8">
-            <div className="relative h-60vh w-100% ">
-                <img src="/trainer.png" alt="Personal Trainer" className=" bg-cover"/>
-                <div className="absolute inset-0 w-full h-100% bg-gradient-to-b  from-slate-900 to-transparent opacity-50"></div>
+        <section className="relative mt-8 h-80vh overflow-x-hidden">
+            <div className="relative sm:absolute sm:left-55% md:w-40vw md:h-45vw">
+                <img src="/trainer.png" alt="Personal Trainer" className="bg-cover sm:aspect-square "/>
+                <div className="absolute sm:hidden inset-0 w-full h-100% bg-gradient-to-b  from-slate-900 to-transparent opacity-50"></div>
             </div>
-            <div className=" mx-4">
-                <h1 className="absolute top-5% md:block text-4xl font-bold w-80% ml-5%">Get your <span>personal
+            <div className="sm:w-50%">
+                <h1 className="absolute top-5% left-5%  sm:static text-4xl sm:text-5xl w-80% font-bold">Get your <span className="text-orange-400 " >personal
                 trainer</span>
                 </h1>
-                <p className=" text-sm opacity-70 mt-10">Allow us to find the best in you. Give yourself a treat you
+                <p className=" text-sm opacity-70 mt-10 lg:text-lg">Allow us to find the best in you. Give yourself a treat you
                     deserve.
                     Healthy body
                     looks and feels different. When you treat yourself right, you see your complete self.</p>
-                <div className="absolute  top-50% left-10%">
+                <div className="absolute top-45% lg:top-55% ">
                     <PrimaryButton text={"Book one"}/>
                 </div>
             </div>
+           
         </section>
     </div>
     )

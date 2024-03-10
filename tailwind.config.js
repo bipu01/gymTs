@@ -13,7 +13,7 @@ export default {
       screens: {
         xsm: "340px",
         xmd: "550px",
-        "8xl": "",
+        xl: "1800px",
       },
       // backgroundImage: (theme) => ({
       //   "hero-image": "url('/fitness_model.png')",
@@ -21,6 +21,7 @@ export default {
       spacing: {
         "onePage": "780px",
         "maxWidth": "1300px",
+        "0%": "0%",
         "2%": "2%",
         "3%": "3%",
         "4%": "4%",
@@ -34,7 +35,9 @@ export default {
         "35%": "35%",
         "40%": "40%",
         "45%": "45%",
+        "48%": "48%",
         "50%": "50%",
+        "52%": "52%",
         "55%": "55%",
         "60%": "60%",
         "65%": "65%",
