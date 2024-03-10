@@ -39,7 +39,7 @@ const Body = () => {
         <section className="relative  w-100vw px-2 sm:px-8 mt-10 ">
             <div className=" grid grid-rows-4 sm:grid-cols-4 lg:mx-10vw h-80vh ">
                 <div className=" sm:col-span-2 sm:row-span-1">
-                    <h1 className="text-4xl sm:text-5xl w-80% h-10 font-bold whitespace-nowrap opacity-90 text-orange-400" >Get your
+                    <h1 className="text-4xl sm:text-5xl w-80% h-10 font-bold whitespace-nowrap opacity-90" >Get your
                         <div className="text-orange-400 ">
                             personal trainer
                         </div>
