@@ -41,8 +41,8 @@ const Body = () => {
                 <div className="absolute sm:hidden inset-0 w-full h-100% bg-gradient-to-b  from-slate-900 to-transparent opacity-50"></div>
             </div>
             <div className="sm:w-50%">
-                <h1 className="absolute top-5% left-5%  sm:static text-4xl sm:text-5xl w-80% font-bold">Get your <span className="text-orange-400 " >personal
-                trainer</span>
+                <h1 className="absolute top-5% left-5%  sm:static text-4xl sm:text-5xl w-80% font-bold">Get your <div className="text-orange-400 " >personal
+                trainer</div>
                 </h1>
                 <p className=" text-sm opacity-70 mt-10 lg:text-lg">Allow us to find the best in you. Give yourself a treat you
                     deserve.
