@@ -5,7 +5,7 @@ const Body = () => {
 
   return (
     <div className="pb-10">
-        <section className="relative lg:mx-15vw px-2 sm:px-8  h-85vh overflow-x-hidden overflow-y-hidden">
+        <section className="relative lg:mx-10vw px-2 sm:px-8  h-85vh overflow-x-hidden overflow-y-hidden">
             <div className="">
                 <div className="">
                     <img src="/fitness_model.png" alt="Fitness Model" className="absolute -right-5vw lg:left-20vw xl:left-25vw  z-0" />
