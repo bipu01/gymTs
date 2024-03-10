@@ -4,7 +4,7 @@ const Body = () => {
     // let paragraphStyles = "";
 
   return (
-    <div className="flex flex-col ">
+    <div className="pb-10">
         <section className="relative lg:mx-15vw px-2 sm:px-8  h-85vh overflow-x-hidden overflow-y-hidden">
             <div className="">
                 <div className="">
@@ -24,7 +24,7 @@ const Body = () => {
                 </div>
               
                 <div className="">
-                    <p className=" text-sm lg:text-lg w-95% xmd:w-55% lg:w-40% opacity-70">Investing in your fitness is an investment in your overall
+                    <p className=" text-sm lg:text-lg w-95% xmd:w-55% lg:w-40% opacity-70 mt-10">Investing in your fitness is an investment in your overall
                         well-being.
                         healthy
                         body and mind can help you achieve your goals and live a fulfilling life. Our dedicated
@@ -35,19 +35,43 @@ const Body = () => {
                 </div>
             </div>
         </section>
-        <section className="relative h-onePage mt-16 pb-8 overflow-hidden lg:mx-15vw px-2 sm:px-8 ">
+
+        <section className="relative  w-100vw px-2 sm:px-8 mt-10 ">
+            <div className=" grid grid-rows-4 sm:grid-cols-4 lg:mx-15vw h-80vh ">
+                <div className=" sm:col-span-2 sm:row-span-1">
+                    <h1 className="text-4xl sm:text-5xl w-80% h-10 font-bold whitespace-nowrap opacity-90">Get your
+                        <div className="text-orange-400 ">
+                            personal trainer
+                        </div>
+                    </h1>
+                </div>
+                <div className="max-w-imgWidth grid-rows-subgrid row-span-3 sm:max-w-45vw sm:col-span-2 sm:row-span-3 overflow-hidden">
+                    <img src="/trainer.png" alt="Personal Trainer" className="bg-cover"/>
+                </div>
+                <div className="row-span-1 sm:col-span-2 sm:row-span-1 mt-8 sm:mt-0">
+                    <p className=" text-sm opacity-70 lg:text-lg w-95% ">Allow us to find the best in you. Give yourself a treat you
+                        deserve.
+                        Healthy body
+                        looks and feels different. When you treat yourself right, you see your complete self.
+                    </p>
+                </div>
+                <div className="mt-4 sm:mt-0 xl:float-end">
+                    <PrimaryButton text={"Book one"}/>
+                </div>
+            
+            </div>
+        </section>
+        {/* <section className="relative h-onePage mt-16 pb-8 overflow-hidden lg:mx-15vw px-2 sm:px-8 ">
             <div className="relative max-w-imgWidth sm:max-w-45vw sm:absolute sm:left-55% md:w-40vw md:h-45vw">
                 <img src="/trainer.png" alt="Personal Trainer" className="bg-cover sm:aspect-square "/>
                 <div className="absolute sm:hidden inset-0 w-full h-100% bg-gradient-to-b from-slate-900 via-transparent to-transparent opacity-50"></div>
             </div>
             <div className="sm:w-50% px-2 md:px-0 ">
-                {/* <div className="absolute top-5% sm:static text-4xl sm:text-5xl w-80% font-bold"> */}
                     <h1 className=" text-4xl sm:text-5xl w-80% font-bold whitespace-nowrap ">Get your
                         <div className="text-orange-400 ">
                             personal trainer
                         </div>
                     </h1>
-                {/* </div> */}
                 <p className=" text-sm opacity-70 mt-10 lg:text-lg w-95% ">Allow us to find the best in you. Give yourself a treat you
                     deserve.
                     Healthy body
@@ -56,8 +80,8 @@ const Body = () => {
                     <PrimaryButton text={"Book one"}/>
                 </div>
             </div>
-           
-        </section>
+        </section>  */}
+        
     </div>
     )
 }

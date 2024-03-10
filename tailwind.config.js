@@ -16,7 +16,7 @@ export default {
       screens: {
         xsm: "340px",
         xmd: "550px",
-        xl: "1800px",
+        xl: "1000px",
       },
       // backgroundImage: (theme) => ({
       //   "hero-image": "url('/fitness_model.png')",
