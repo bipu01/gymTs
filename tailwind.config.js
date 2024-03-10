@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        "bg": "#0B0D23",
+      },
       dropShadow: {
         "3xl": "0 35px 35px rgba(0, 0, 0, 0.25)",
         "4xl": [
