@@ -27,6 +27,7 @@ export default {
         "onePage": "860px",
         "maxWidth": "1300px",
         "subMenuHeight": "415px",
+        "imageAt3xl": "550px",
         "18": "68px",
         "14": "50px",
         "1px": "1px",

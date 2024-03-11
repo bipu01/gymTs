@@ -5,10 +5,11 @@ import { requiresMargin, requiresPadding } from "../../../declaratiionVariables"
 
 
 const PersonalTrainer = (prop:bodyProp) => {
+
   return (
         <section className="relative w-100vw mt-10">
             <div className="grid grid-cols-1 grid-rows-3 xmd:grid-rows-4 h-onePage">
-                <div className={`row-span-3 xmd:row-span-2 grid grid-rows-4 xmd:grid-rows-2 xmd:grid-cols-2 md:h-96 ${requiresMargin}`}>
+                <div className={`row-span-3 xmd:row-span-1 md:row-span-2 grid grid-rows-4 xmd:grid-rows-2  xmd:grid-cols-2 md:h-96 ${requiresMargin}`}>
                     <div className="">
                         <h1 className="text-4xl md:text-6xl text-20% h-10 font-bold opacity-90" > {prop.heading}
                             <div className="text-orange-400 ">
@@ -16,7 +17,7 @@ const PersonalTrainer = (prop:bodyProp) => {
                             </div>
                         </h1>
                     </div>
-                    <div className="row-span-3 md:row-span-2 col-span-1 overflow-hidden">
+                    <div className="row-span-1 md:row-span-2 col-span-1 overflow-hidden 2xl:h-imageAt3xl z-10">
                         <img src="/personalTrainer.png" alt="Personal Trainer" className="bg-cover"/>
                     </div>
                     <div className=" mt-4 xmd:mt-0 ">
@@ -34,12 +35,10 @@ const PersonalTrainer = (prop:bodyProp) => {
                             {/* <TrainerCard name={"Smiti Bishwokarma"} availability={{from:"1pm", to:"5pm"}} image={"/trainer3.jpg"} age={26} ph={9812345678}/> */}
                         </div>
                     </div>
-
                     <div className="mt-6">
                         <PrimaryButton text={"Book one"}/>
                     </div>
                 </div>
-            
             </div>
         </section>
   )

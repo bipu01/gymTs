@@ -7,8 +7,8 @@ import TrainerCard from "../../Cards/TrainerCards"
 const ProgramsWeOffer = (prop:programsWeOfferProps) => {
   return (
         <section className="relative w-100vw mt-5vh mb-10vh">
-            <div className="grid grid-cols-1 grid-rows-3 xmd:grid-rows-4 h-onePage">
-                <div className={`row-span-3 xmd:row-span-2 grid grid-rows-4 xmd:grid-rows-2 xmd:grid-cols-2 md:h-96 ${requiresMargin}`}>
+            <div className="grid grid-cols-1 grid-rows-3 xmd:grid-rows-5 h-onePage">
+                <div className={`row-span-3 xmd:row-span-1 md:row-span-2 xmd:grid xmd:grid-rows-2 xmd:grid-cols-2  ${requiresMargin}`}>
                     <div className="">
                         <h1 className="text-2xl md:text-4xl h-10 font-bold opacity-90" > {prop.heading}
                             <div className="text-orange-400 ">
@@ -16,7 +16,7 @@ const ProgramsWeOffer = (prop:programsWeOfferProps) => {
                             </div>
                         </h1>
                     </div>
-                    <div className=" row-span-3 md:row-span-2 col-span-1 overflow-hidden">
+                    <div className=" row-span-3 md:row-span-2 col-span-1 overflow-hidden  2xl:h-imageAt3xl z-10">
                         <img src={prop.heroImg} alt="Personal Trainer" className="object-cover"/>
                     </div>
                     <div className=" mt-4 xmd:mt-0 ">
