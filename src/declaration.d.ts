@@ -1,11 +1,37 @@
 export type textProp ={
-    text:string
+    text?:string
 }
 
 export type bodyProp ={
     paragraph: string,
     heading: string,
-    highlitedText?:string
+    highlitedText?:string,
+
+    trainerTitle:string,
+    trainerName: string,
+    trainerAvailability: {from:string, to:string},
+    trainerImage?:string,
+    trainerAge?:number,
+    trainerPh?: number,
+
+    btnText?:string
+}
+
+export type programsWeOfferProps ={
+    paragraph: string,
+    heading: string,
+    highlitedText?:string,
+
+    heroImg:string,
+
+    trainerTitle:string,
+    trainerName: string,
+    trainerAvailability: {from:string, to:string},
+    trainerImage?:string,
+    trainerAge?:number,
+    trainerPh?: number,
+
+    btnText?:string
 }
 
 export type trainerCardProp ={

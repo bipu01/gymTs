@@ -1,9 +1,8 @@
-import GetYourPersonalTrainer from "../components/BodyComponents/GetYourPersonalTrainer"
-// import InvestInYourFitness from "../components/BodyComponents/InvestInYourFitness"
+// import GetYourPersonalTrainer from "../components/BodyComponents/GetYourPersonalTrainer"
+import BodyContent from "../components/BodyComponents/GetYourPersonalTrainer/BodyContent"
+import ProgramsWeOffer from "../components/BodyComponents/ProgramsWeOffer"
 
 const Body = () => {
-    // let paragraphStyles = "";
-
   return (
     <div className="pb-10">
         {/* <InvestInYourFitness paragraph={`Investing in your fitness is an investment in your overall well-being. healthy
@@ -13,11 +12,50 @@ const Body = () => {
 
                         heading={`Invest in Your Fitness`}
         /> */}
-        <GetYourPersonalTrainer paragraph={`Allow us to find the best in you. Give yourself a treat you deserve. Healthy body
-                        looks and feels different. When you treat yourself right, you see your complete self.`}
-                        heading="Get your" highlitedText="personal trainer"
+
+        {/* For Personal trainer */}
+        <BodyContent    heading="Get your" 
+                        highlitedText="personal trainer"
+                        paragraph={`Allow us to find the best in you. Give yourself a treat you deserve. Healthy body
+                                    looks and feels different. When you treat yourself right, you see your complete self.`}
+                        trainerTitle="Our personal trainers:"
+                        trainerName="Ravi Acharya"
+                        trainerAvailability={{from:"6am",to:"9am"}}
+                        trainerImage="/trainer1.jpeg"
+                        trainerAge={32}
+                        trainerPh={9841235454}
+                        btnText="Book one"
         />
 
+        {/* For courses we offer */}
+        <h1 className="text-3xl xmd:text-4xl mx-2 sm:mx-8 xl:mx-15% 3xl:mx-20vw mt-12 xmd:mt-5vh mb-0 ">Programs we offer:</h1>
+
+        <ProgramsWeOffer    heading="1. Weight lifting"
+                        paragraph="Allow us to find the best in you. Give yourself a treat you deserve.  Healthy body looks and feels different. When you treat yourself right, you see your complete self"
+                        heroImg="/weightLifting.jpg"
+
+                        trainerTitle="Our Instructors:"
+                        trainerName="Aakriti Bishwokarma"
+                        trainerAvailability={{from:"5am", to:"5pm"}}
+                        trainerAge={28}
+                        trainerImage="/trainer2.jpg"
+                        trainerPh={98876532144}
+                        btnText="Schedule time"
+
+        />
+        <ProgramsWeOffer    heading="2. Cardio"
+                        paragraph="Allow us to find the best in you. Give yourself a treat you deserve.  Healthy body looks and feels different. When you treat yourself right, you see your complete self"
+                        heroImg="/cardio.jpeg"
+
+                        trainerTitle="Our Instructors:"
+                        trainerName="Aakriti Bishwokarma"
+                        trainerAvailability={{from:"5am", to:"5pm"}}
+                        trainerAge={28}
+                        trainerImage="/trainer2.jpg"
+                        trainerPh={98876532144}
+                        btnText="Schedule time"
+
+        />
 
 
     </div>

@@ -1,1 +1,1 @@
-export {default} from "./GetYourPersonalTrainer"
+export {default} from "./BodyContent"
