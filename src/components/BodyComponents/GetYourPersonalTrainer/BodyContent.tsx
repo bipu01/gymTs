@@ -30,8 +30,8 @@ const BodyContent = (prop:bodyProp) => {
                     <div className=" w-100% overflow-x-scroll mt-4">
                         <div id="coachCards" className=" flex h-100% gap-8 mt-2">
                             <TrainerCard name={prop.trainerName} availability={prop.trainerAvailability} image={prop.trainerImage} age={prop.trainerAge} ph={prop.trainerPh}/>
-                            {/* <TrainerCard name={"Smiti Bishwokarma"} availability={{from:"1pm", to:"5pm"}} image={"/trainer2.jpg"} age={26} ph={9812345678}/>
-                            <TrainerCard name={"Smiti Bishwokarma"} availability={{from:"1pm", to:"5pm"}} image={"/trainer3.jpg"} age={26} ph={9812345678}/> */}
+                            <TrainerCard name={"Smiti Bishwokarma"} availability={{from:"1pm", to:"5pm"}} image={"/trainer2.png"} age={26} ph={9812345678}/>
+                            {/* <TrainerCard name={"Smiti Bishwokarma"} availability={{from:"1pm", to:"5pm"}} image={"/trainer3.jpg"} age={26} ph={9812345678}/> */}
                         </div>
                     </div>
 

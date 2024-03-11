@@ -1,6 +1,7 @@
 // import GetYourPersonalTrainer from "../components/BodyComponents/GetYourPersonalTrainer"
 import BodyContent from "../components/BodyComponents/GetYourPersonalTrainer/BodyContent"
 import ProgramsWeOffer from "../components/BodyComponents/ProgramsWeOffer"
+import { requiresMargin } from "../declaratiionVariables"
 
 const Body = () => {
   return (
@@ -28,30 +29,43 @@ const Body = () => {
         />
 
         {/* For courses we offer */}
-        <h1 className="text-3xl xmd:text-4xl mx-2 sm:mx-8 xl:mx-15% 3xl:mx-20vw mt-12 xmd:mt-5vh mb-0 ">Programs we offer:</h1>
+        <h1 className={`text-3xl xmd:text-4xl ${requiresMargin} xmd:mt-5vh mb-0 `}>Programs we offer:</h1>
 
         <ProgramsWeOffer    heading="1. Weight lifting"
                         paragraph="Allow us to find the best in you. Give yourself a treat you deserve.  Healthy body looks and feels different. When you treat yourself right, you see your complete self"
-                        heroImg="/weightLifting.jpg"
+                        heroImg="/weightLifting.png"
 
                         trainerTitle="Our Instructors:"
                         trainerName="Aakriti Bishwokarma"
                         trainerAvailability={{from:"5am", to:"5pm"}}
                         trainerAge={28}
-                        trainerImage="/trainer2.jpg"
+                        trainerImage="/trainer2.png"
                         trainerPh={98876532144}
                         btnText="Schedule time"
 
         />
         <ProgramsWeOffer    heading="2. Cardio"
                         paragraph="Allow us to find the best in you. Give yourself a treat you deserve.  Healthy body looks and feels different. When you treat yourself right, you see your complete self"
-                        heroImg="/cardio.jpeg"
+                        heroImg="/cardio.png"
 
                         trainerTitle="Our Instructors:"
                         trainerName="Aakriti Bishwokarma"
                         trainerAvailability={{from:"5am", to:"5pm"}}
                         trainerAge={28}
-                        trainerImage="/trainer2.jpg"
+                        trainerImage="/trainer2.png"
+                        trainerPh={98876532144}
+                        btnText="Schedule time"
+
+        />
+        <ProgramsWeOffer    heading="3. Our Jumba sessions"
+                        paragraph="Allow us to find the best in you. Give yourself a treat you deserve.  Healthy body looks and feels different. When you treat yourself right, you see your complete self"
+                        heroImg="/jumba.png"
+
+                        trainerTitle="Our Instructors:"
+                        trainerName="Aakriti Bishwokarma"
+                        trainerAvailability={{from:"5am", to:"5pm"}}
+                        trainerAge={28}
+                        trainerImage="/trainer2.png"
                         trainerPh={98876532144}
                         btnText="Schedule time"
 

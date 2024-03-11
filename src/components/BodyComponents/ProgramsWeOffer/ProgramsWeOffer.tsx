@@ -17,7 +17,7 @@ const ProgramsWeOffer = (prop:programsWeOfferProps) => {
                         </h1>
                     </div>
                     <div className=" row-span-3 md:row-span-2 col-span-1 overflow-hidden">
-                        <img src={prop.heroImg} alt="Personal Trainer" className="bg-cover"/>
+                        <img src={prop.heroImg} alt="Personal Trainer" className="object-cover"/>
                     </div>
                     <div className=" mt-4 xmd:mt-0 ">
                         <p className=" text-sm opacity-70 lg:text-lg">
@@ -60,8 +60,8 @@ const ProgramsWeOffer = (prop:programsWeOfferProps) => {
                         <div className=" w-100% overflow-x-scroll mt-4">
                             <div id="coachCards" className=" flex h-100% gap-8 mt-2">
                                 <TrainerCard name={prop.trainerName} availability={prop.trainerAvailability} image={prop.trainerImage} age={prop.trainerAge} ph={prop.trainerPh}/>
-                                {/* <TrainerCard name={"Ravi Acharya"} availability={{from:"5am", to:"9am"}} image={"/trainer1.jpeg"} age={32} ph={9812345678}/>
-                                <TrainerCard name={"Smiti Bishwokarma"} availability={{from:"1pm", to:"5pm"}} image={"/trainer2.jpg"} age={26} ph={9812345678}/>
+                                <TrainerCard name={"Ravi Acharya"} availability={{from:"5am", to:"9am"}} image={"/trainer1.jpeg"} age={32} ph={9812345678}/>
+                                {/* <TrainerCard name={"Smiti Bishwokarma"} availability={{from:"1pm", to:"5pm"}} image={"/trainer2.jpg"} age={26} ph={9812345678}/>
                                 <TrainerCard name={"Smiti Bishwokarma"} availability={{from:"1pm", to:"5pm"}} image={"/trainer3.jpg"} age={26} ph={9812345678}/> */}
                             </div>
                         </div>
