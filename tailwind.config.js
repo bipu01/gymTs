@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         "bg": "#0B0D23",
+        "secondary": "rgba(128,137,238,0.1)",
       },
       dropShadow: {
         "3xl": "0 35px 35px rgba(0, 0, 0, 0.25)",
