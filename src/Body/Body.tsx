@@ -1,5 +1,5 @@
 // import GetYourPersonalTrainer from "../components/BodyComponents/GetYourPersonalTrainer"
-import BodyContent from "../components/BodyComponents/GetYourPersonalTrainer/BodyContent"
+import BodyContent from "../components/BodyComponents/PersonalTrainer/PersonalTrainer"
 import ProgramsWeOffer from "../components/BodyComponents/ProgramsWeOffer"
 import { requiresMargin } from "../declaratiionVariables"
 
@@ -27,9 +27,10 @@ const Body = () => {
                         trainerPh={9841235454}
                         btnText="Book one"
         />
+        
 
         {/* For courses we offer */}
-        <h1 className={`text-3xl xmd:text-4xl ${requiresMargin} xmd:mt-5vh mb-0 `}>Programs we offer:</h1>
+        <h1 className={`text-3xl xmd:text-4xl ${requiresMargin} mt-15vh mb-0 `}>Programs we offer:</h1>
 
         <ProgramsWeOffer    heading="1. Weight lifting"
                         paragraph="Allow us to find the best in you. Give yourself a treat you deserve.  Healthy body looks and feels different. When you treat yourself right, you see your complete self"

@@ -4,7 +4,7 @@ import TrainerCard from "../../Cards/TrainerCards"
 import { requiresMargin, requiresPadding } from "../../../declaratiionVariables"
 
 
-const BodyContent = (prop:bodyProp) => {
+const PersonalTrainer = (prop:bodyProp) => {
   return (
         <section className="relative w-100vw mt-10">
             <div className="grid grid-cols-1 grid-rows-3 xmd:grid-rows-4 h-onePage">
@@ -25,7 +25,7 @@ const BodyContent = (prop:bodyProp) => {
                         </p>
                     </div>
                 </div>
-                <div className={` bg-secondary border-solid border-2 border-secondary mt-4 h-64 ${requiresPadding}`}>
+                <div className={` bg-secondary border-solid border-secondary border-y-2 mt-4 h-64 ${requiresPadding}`}>
                     <h3 className=" text-xl">{prop.trainerTitle}</h3>
                     <div className=" w-100% overflow-x-scroll mt-4">
                         <div id="coachCards" className=" flex h-100% gap-8 mt-2">
@@ -45,4 +45,4 @@ const BodyContent = (prop:bodyProp) => {
   )
 }
 
-export default BodyContent
+export default PersonalTrainer

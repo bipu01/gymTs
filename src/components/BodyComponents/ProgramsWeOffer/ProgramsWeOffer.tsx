@@ -6,7 +6,7 @@ import TrainerCard from "../../Cards/TrainerCards"
 
 const ProgramsWeOffer = (prop:programsWeOfferProps) => {
   return (
-        <section className="relative w-100vw mt-20vh">
+        <section className="relative w-100vw mt-5vh mb-10vh">
             <div className="grid grid-cols-1 grid-rows-3 xmd:grid-rows-4 h-onePage">
                 <div className={`row-span-3 xmd:row-span-2 grid grid-rows-4 xmd:grid-rows-2 xmd:grid-cols-2 md:h-96 ${requiresMargin}`}>
                     <div className="">
@@ -27,7 +27,7 @@ const ProgramsWeOffer = (prop:programsWeOfferProps) => {
                 </div>
 
 
-                <div className={`bg-secondary border-solid border-2 border-secondary mt-4 ${requiresPadding} h-subMenuHeight`}>
+                <div className={`bg-secondary border-solid border-y-2 border-secondary mt-4 ${requiresPadding} h-subMenuHeight`}>
                     <div>
                         <h3 className=" text-xl">Weight lifting Time schedule:</h3>
                         <div className="flex gap-8 xmd:gap-14 text-sm xmd:text-lg opacity-50 mt-4 whitespace-nowrap overflow-x-scroll overflow-y-visible" >
