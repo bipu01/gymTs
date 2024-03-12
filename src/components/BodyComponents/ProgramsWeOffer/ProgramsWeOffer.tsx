@@ -16,7 +16,7 @@ const ProgramsWeOffer = (prop:programsWeOfferProps) => {
                             </div>
                         </h1>
                     </div>
-                    <div className="row-span-2 col-span-1 overflow-hidden z-10 xl:relative xl:overflow-visible">
+                    <div className="row-span-2 col-span-1 max-h-72 xmd:max-h-100vh overflow-hidden z-10 xl:relative xl:overflow-visible">
                         <img src={prop.heroImg} alt="Personal Trainer" className="object-cover xl:absolute xl:h-96 rounded-sm"/>
                     </div>
                     <div className=" mt-4 xmd:mt-0 ">
