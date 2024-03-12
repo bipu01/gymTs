@@ -7,7 +7,12 @@ import TrainerCard from "../../Cards/TrainerCards"
 const ProgramsWeOffer = (prop:programsWeOfferProps) => {
   return (
         <section className="relative mt-10vh xmd:mt-0 ">
-            <div className="grid grid-rows-2 xmd:grid-rows-4 h-onePage">
+            {/* <div className="w-40vw h-40vw bg-red-100 backdrop-blur-xl backdrop-blur-3xl opacity-25 absolute right-30% -top-10% z-20">
+                <h1 className="">Hallo lqeiuhfgalksdjgha</h1>
+            </div> */}
+            <img src="/bottomBlob.svg" alt="" className="absolute -top-15% xmd:-top-10% w-80vw -right-40% xmd:-right-30%"/>
+            <img src="/bottomBlob.svg" alt="" className="absolute -top-45% xmd:-top-60% w-70vw -left-30%"/>
+            <div className="grid grid-rows-2 xmd:grid-rows-4 h-onePage z-10">
                 <div className={`row-span-1 xmd:row-span-1 xmd:grid xmd:grid-cols-2 ${requiresMargin}`}>
                     <div className=" mb-10">
                         <h1 className="text-2xl md:text-4xl font-bold opacity-90" > {prop.heading}
@@ -27,7 +32,7 @@ const ProgramsWeOffer = (prop:programsWeOfferProps) => {
                 </div>
 
 
-                <div className={`xmd:row-span-2 bg-secondary border-solid border-y-2 border-secondary mt-4 w-100vw ${requiresPadding} `}>
+                <div className={`xmd:row-span-2 bg-secondary border-solid border-y-2 border-secondary mt-4 w-100vw z-10 ${requiresPadding} `}>
                     <div>
                         <h3 className=" text-xl">Weight lifting Time schedule:</h3>
                         <div className="flex gap-8 xmd:gap-14 text-sm xmd:text-lg opacity-50 mt-4 whitespace-nowrap overflow-x-scroll overflow-y-visible" >

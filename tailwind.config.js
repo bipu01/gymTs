@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      filter: {
+        "blur": "blur(100px)",
+      },
       colors: {
         "bg": "#0B0D23",
         "secondary": "rgba(128,137,238,0.1)",
@@ -19,9 +22,6 @@ export default {
         xmd: "550px",
         xl: "1000px",
       },
-      // backgroundImage: (theme) => ({
-      //   "hero-image": "url('/fitness_model.png')",
-      // }),
       spacing: {
         "imgWidth": "410px",
         "onePage": "860px",
@@ -125,6 +125,11 @@ export default {
         "98vw": "98vw",
         "100vw": "100vw",
       },
+    },
+  },
+  variants: {
+    extend: {
+      filter: ["responsive"],
     },
   },
   plugins: [],

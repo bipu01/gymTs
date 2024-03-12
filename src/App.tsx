@@ -3,7 +3,7 @@ import Navbar from "./Navbar"
 
 function App() {
   return (
-    <div className=" bg-bg text-white">
+    <div className=" bg-bg text-white overflow-hidden">
     <Navbar/>
     <Body/>
     </div>
