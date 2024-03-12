@@ -30,7 +30,7 @@ const Body = () => {
         
 
         {/* For courses we offer */}
-        <h1 className={`text-3xl xmd:text-4xl ${requiresMargin} mt-15vh mb-0 `}>Programs we offer:</h1>
+        <h1 className={`text-3xl xmd:text-4xl ${requiresMargin} mt-15vh mb-10vh `}>Programs we offer:</h1>
 
         <ProgramsWeOffer    heading="1. Weight lifting"
                         paragraph="Allow us to find the best in you. Give yourself a treat you deserve.  Healthy body looks and feels different. When you treat yourself right, you see your complete self"

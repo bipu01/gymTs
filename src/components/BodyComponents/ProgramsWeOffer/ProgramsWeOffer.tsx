@@ -6,18 +6,18 @@ import TrainerCard from "../../Cards/TrainerCards"
 
 const ProgramsWeOffer = (prop:programsWeOfferProps) => {
   return (
-        <section className="relative w-100vw mt-5vh mb-10vh">
-            <div className="grid grid-cols-1 grid-rows-3 xmd:grid-rows-5 h-onePage">
-                <div className={`row-span-3 xmd:row-span-1 md:row-span-2 xmd:grid xmd:grid-rows-2 xmd:grid-cols-2  ${requiresMargin}`}>
-                    <div className="">
-                        <h1 className="text-2xl md:text-4xl h-10 font-bold opacity-90" > {prop.heading}
+        <section className="relative mt-10vh xmd:mt-0 ">
+            <div className="grid grid-rows-2 xmd:grid-rows-4 h-onePage">
+                <div className={`row-span-1 xmd:row-span-1 xmd:grid xmd:grid-cols-2 ${requiresMargin}`}>
+                    <div className=" mb-10">
+                        <h1 className="text-2xl md:text-4xl font-bold opacity-90" > {prop.heading}
                             <div className="text-orange-400 ">
                                 {prop.highlitedText}
                             </div>
                         </h1>
                     </div>
-                    <div className=" row-span-3 md:row-span-2 col-span-1 overflow-hidden  2xl:h-imageAt3xl z-10">
-                        <img src={prop.heroImg} alt="Personal Trainer" className="object-cover"/>
+                    <div className="row-span-2 col-span-1 overflow-hidden z-10 xl:relative xl:overflow-visible">
+                        <img src={prop.heroImg} alt="Personal Trainer" className="object-cover xl:absolute xl:h-96 rounded-sm"/>
                     </div>
                     <div className=" mt-4 xmd:mt-0 ">
                         <p className=" text-sm opacity-70 lg:text-lg">
@@ -27,7 +27,7 @@ const ProgramsWeOffer = (prop:programsWeOfferProps) => {
                 </div>
 
 
-                <div className={`bg-secondary border-solid border-y-2 border-secondary mt-4 ${requiresPadding} h-subMenuHeight`}>
+                <div className={`xmd:row-span-2 bg-secondary border-solid border-y-2 border-secondary mt-4 w-100vw ${requiresPadding} `}>
                     <div>
                         <h3 className=" text-xl">Weight lifting Time schedule:</h3>
                         <div className="flex gap-8 xmd:gap-14 text-sm xmd:text-lg opacity-50 mt-4 whitespace-nowrap overflow-x-scroll overflow-y-visible" >
