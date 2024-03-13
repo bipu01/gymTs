@@ -1,0 +1,18 @@
+import { svg } from "../../declaration"
+
+export const UpperBlob = (prop:svg) => {
+  return (
+        <svg width="1239" height="945" viewBox="0 0 1239 945" fill={prop.fill} xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_f_256_511)">
+          <path d="M670.23 200.216C600.959 202.342 396.88 278.031 303.499 315.61C164.387 502.368 205.851 511.021 205.755 579.296C205.658 647.57 553.42 768.4 783.727 740.013C1014.04 711.626 1046.59 413.84 1037.51 333.376C1028.44 252.911 756.82 197.558 670.23 200.216Z" fill="#0C19A8" fill-opacity="0.25"/>
+          </g>
+          <defs>
+            <filter id="filter0_f_256_511" x="0.0437012" y="0.124023" width="1238.8" height="944.132" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_256_511"/>
+            </filter>
+          </defs>
+        </svg>
+  )
+}

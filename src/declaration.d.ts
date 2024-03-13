@@ -38,8 +38,10 @@ export type trainerCardProp ={
     name: string,
     availability: {from:string, to:string},
     image?:string,
-    age?:number,
-    ph?: number
+}
+
+export type svg={
+    fill:string,
 }
 
 // interface time{
