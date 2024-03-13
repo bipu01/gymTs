@@ -15,14 +15,14 @@ const PersonalTrainer = (prop:bodyProp) => {
 
                 <div className={`row-span-2 grid grid-rows-4 xmd:grid-rows-3 xmd:grid-cols-2 md:h-96 ${requiresMargin} ` }>
                     <div className="">
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl text-20% h-10 font-bold opacity-90" > {prop.heading}
+                        <h1 className="text-4xl md:text-5xl 2xl:text-6xl text-20% h-10 font-bold opacity-90" > {prop.heading}
                             <div className="text-orange-400 ">
                                 {prop.highlitedText}
                             </div>
                         </h1>
                     </div>
                     <div className="row-span-2 xmd:row-span-2 overflow-hidden 2xl:h-imageAt3xl z-10 xl:relative xl:overflow-visible">
-                        <img src="/personalTrainer.png" alt="Personal Trainer" className="object-cover xl:absolute xl:h-96 rounded-sm" />
+                        <img src="/personalTrainer.png" alt="Personal Trainer" className="object-cover xl:absolute xl:h-96 rounded-sm " loading="lazy" />
                     </div>
                     <div className=" mt-4 xmd:mt-0 ">
                         <p className=" text-sm opacity-70 lg:text-lg">
@@ -30,12 +30,12 @@ const PersonalTrainer = (prop:bodyProp) => {
                         </p>
                     </div>
                 </div>
-                <div className={` bg-secondary border-solid border-secondary border-y-2 mt-4 w-100vw z-10 ${requiresPadding}`}>
+                <div className={`flex flex-col bg-secondary border-solid border-secondary border-y-2 mt-4 w-100vw z-10 ${requiresPadding}`}>
                     <h3 className=" text-xl">{prop.trainerTitle}</h3>
-                    <div className=" w-100% overflow-x-scroll mt-4">
-                        <div id="coachCards" className=" flex h-100% gap-8 mt-2">
-                            <TrainerCard name={prop.trainerName} availability={prop.trainerAvailability} image={prop.trainerImage} age={prop.trainerAge} ph={prop.trainerPh}/>
-                            <TrainerCard name={"Smiti Bishwokarma"} availability={{from:"1pm", to:"5pm"}} image={"/trainer2.png"} age={26} ph={9812345678}/>
+                    <div className="overflow-x-scroll mt-4">
+                        <div id="coachCards" className=" flex gap-8 mt-2">
+                            <TrainerCard name={prop.trainerName} availability={prop.trainerAvailability} image={prop.trainerImage} />
+                            <TrainerCard name={"Smiti Bishwokarma"} availability={{from:"1pm", to:"5pm"}} image={"/trainer2.png"} />
                             {/* <TrainerCard name={"Smiti Bishwokarma"} availability={{from:"1pm", to:"5pm"}} image={"/trainer3.jpg"} age={26} ph={9812345678}/> */}
                         </div>
                     </div>
