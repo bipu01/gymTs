@@ -3,12 +3,19 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      borderWidth: {
+        "1px": "1px",
+        "2px": "2px",
+      },
       filter: {
         "blur": "blur(100px)",
       },
       colors: {
         "bg": "#0B0D23",
         "secondary": "rgba(128,137,238,0.1)",
+        "enrollBorder": "rgba(255,255,255,0.5)",
+        "divisorLine": "rgba(255,255,255,0.8)",
+        "menuBg": "rgba(81,87,135,0.25)",
       },
       dropShadow: {
         "3xl": "0 35px 35px rgba(0, 0, 0, 0.25)",

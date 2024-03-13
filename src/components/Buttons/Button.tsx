@@ -1,8 +1,14 @@
+import {  useNavigate } from "react-router-dom"
 import { textProp } from "../../declaration"
 
 export const PrimaryButton = (prop:textProp) => {
+  const navigate = useNavigate();
+  const handleClick  = () => {
+    console.log("Navigating now");
+    navigate("/enrollPage");
+  };
   return (
-    <button type="button" className="bg-orange-400 text-black font-medium p-2 rounded-sm lg:text-lg lg:px-4">{prop.text}</button>
+    <button type="button" className="bg-orange-400 text-black font-medium p-2 rounded-sm lg:text-lg lg:px-4" onClick={handleClick} >{prop.text}</button>
   )
 }
 
@@ -13,11 +19,12 @@ export const SecondaryButton = (prop:textProp) => {
   }
   
   export const NavHeroBtn = (prop:textProp) => {
-    const openEnrollNow  = () => {
-      
+    const navigate = useNavigate();
+    const handleClick  = () => {
+      console.log("Navigating now");
+      navigate("/enrollPage");
     };
-
     return (
-      <button type="button" className="bg-orange-400 text-black font-medium p-2 py-1 rounded-3xl lg:text-lg lg:px-4" onClick={openEnrollNow} >{prop.text}</button>
+        <button type="button" className="bg-orange-400 text-black font-medium p-2 py-1 rounded-3xl lg:text-lg lg:px-4" onClick={handleClick}  >{prop.text}</button>
     )
   }

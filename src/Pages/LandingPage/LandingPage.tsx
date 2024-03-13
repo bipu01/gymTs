@@ -5,7 +5,7 @@ import { requiresMargin } from "../../declaratiionVariables"
 
 const LandingPage = () => {
   return (
-    <>
+    <section className="pb-20vh">
         {/* For Personal trainer */}
         <PersonalTrainer    heading="Get your" 
                         highlitedText="personal trainer"
@@ -68,7 +68,7 @@ const LandingPage = () => {
             <iframe className="w-100% h-30vh" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2212.096578259749!2d85.38223478582744!3d27.722667300780063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bb2d1ab9841%3A0x551bdb5ec4ada01c!2sSweat%20and%20Shine%20Fitness%20Zone!5e0!3m2!1sen!2snp!4v1710308399079!5m2!1sen!2snp" width="800" height="600" loading="lazy" ></iframe>
           </div>
         </div>
-</>
+</section>
   )
 }
 

@@ -1,1 +1,1 @@
-export {default} from "./EnrollNow"
+export {default} from "./EnrollNowPage"
