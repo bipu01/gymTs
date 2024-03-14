@@ -19,7 +19,7 @@ const ProgramsWeOffer = (prop:programsWeOfferProps) => {
                         </h1>
                     </div>
                     <div className="row-span-2 col-span-1 max-h-72 xmd:max-h-100vh overflow-hidden z-20 xl:relative xl:overflow-visible">
-                        <img src={prop.heroImg} alt="Personal Trainer" className="object-cover xl:absolute xl:h-96 rounded-sm"/>
+                        <img src={prop.heroImg} loading="lazy" alt="Personal Trainer" className="object-cover xl:absolute xl:h-96 rounded-sm"/>
                     </div>
                     <div className=" mt-4 xmd:mt-0 xmd:w-80%">
                         <p className=" text-sm opacity-70 lg:text-lg">
@@ -27,7 +27,7 @@ const ProgramsWeOffer = (prop:programsWeOfferProps) => {
                         </p>
                     </div>
                 </div>
-
+                
               <div className={`relative bg-secondary border-solid border-y-2 border-secondary mt-4 md:mt-10vh w-100vw z-10 ${requiresPadding} `}>
                     <div className="flex gap-2 ">
                         <h3 className=" text-xl">Weight lifting Time schedule:</h3>

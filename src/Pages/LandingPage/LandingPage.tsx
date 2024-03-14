@@ -5,7 +5,7 @@ import { requiresMargin } from "../../declaratiionVariables"
 
 const LandingPage = () => {
   return (
-    <section className="pb-20vh">
+    <section className="py-10vh">
         {/* For Personal trainer */}
         <PersonalTrainer    heading="Get your" 
                         highlitedText="personal trainer"

@@ -22,7 +22,7 @@ const PersonalTrainer = (prop:bodyProp) => {
                         </h1>
                     </div>
                     <div className="row-span-2 xmd:row-span-2 overflow-hidden 2xl:h-imageAt3xl z-10 xl:relative xl:overflow-visible">
-                        <img src="/personalTrainer.png" alt="Personal Trainer" className="object-cover xl:absolute xl:h-96 rounded-sm " loading="lazy" />
+                        <img loading="lazy" src="/personalTrainer.png" alt="Personal Trainer" className="object-cover xl:absolute xl:h-96 rounded-sm " />
                     </div>
                     <div className=" mt-4 xmd:mt-0 ">
                         <p className=" text-sm opacity-70 lg:text-lg">
