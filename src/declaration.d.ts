@@ -2,6 +2,11 @@ export type textProp ={
     text?:string
 }
 
+export type activeBtnProp ={
+    text:string,
+    styled:boolean
+}
+
 export type bodyProp ={
     paragraph: string,
     heading: string,

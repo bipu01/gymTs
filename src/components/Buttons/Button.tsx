@@ -1,14 +1,8 @@
-import {  useNavigate } from "react-router-dom"
-import { textProp } from "../../declaration"
+import { activeBtnProp, textProp } from "../../declaration"
 
 export const PrimaryButton = (prop:textProp) => {
-  const navigate = useNavigate();
-  const handleClick  = () => {
-    console.log("Navigating now");
-    navigate("/enrollPage");
-  };
   return (
-    <button type="button" className="bg-orange-400 text-black font-medium p-2 rounded-sm lg:text-lg lg:px-4" onClick={handleClick} >{prop.text}</button>
+    <button type="button" className="bg-orange-400 text-black font-medium p-2 rounded-sm lg:text-lg lg:px-4"  >{prop.text}</button>
   )
 }
 
@@ -18,13 +12,8 @@ export const SecondaryButton = (prop:textProp) => {
     )
   }
   
-  export const NavHeroBtn = (prop:textProp) => {
-    const navigate = useNavigate();
-    const handleClick  = () => {
-      console.log("Navigating now");
-      navigate("/enrollPage");
-    };
+  export const NavHeroBtn = (prop:activeBtnProp) => {
     return (
-        <button type="button" className="bg-orange-400 text-black font-medium p-2 py-1 rounded-3xl lg:text-lg lg:px-4" onClick={handleClick}  >{prop.text}</button>
+        <button type="button" className={`${prop.styled?"bg-gradient-to-br from-activeBtnStart via-activeBtnMid to-activeBtnEnd text-white80":"bg-orange-400 text-black"} font-medium px-2 xmd:px-4 py-1 rounded-3xl lg:text-lg lg:px-4 `} >{prop.text}</button>
     )
   }

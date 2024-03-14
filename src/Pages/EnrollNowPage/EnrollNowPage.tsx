@@ -25,7 +25,7 @@ const EnrollNow = () => {
   return (
     <div className={`${requiresMargin} mb-10vh h-90vh`}>
       <h1 className="text-2xl xmd:3xl mb-5vh text-orange-400 font-bold">Our plans:</h1>
-      <div className="flex flex-col border-solid rounded-2xl border-2 border-enrollBorder p-2 py-8 xmd:py-12 xmd:p-10  gap-8 xmd:gap-12 ">
+      <div className="flex flex-col border-solid rounded-2xl border-2 border-white50 p-2 py-8 xmd:py-12 xmd:p-10  gap-8 xmd:gap-12 ">
         
         <div id="monthlyProgram">
           <div className="flex items-center">
@@ -36,7 +36,7 @@ const EnrollNow = () => {
               <img id="monthly" onClick={toggleMonthlyMenu} className="opacity-80 hover:opacity-100 hover:cursor-pointer absolute right-0 float-right" src="/rightPointed.svg" alt="rightPointed icon" />
             </div>
           </div>
-          <div id="monthlyProgramMenu" className={`${isMonthlyOpen?'h-60 p-4':'h-0 p-0'} gap-4 overflow-clip menuPanel flex flex-col transition-all duration-150 mt-1 w-100% 2xl:w-80% border-solid border-1px border-y-divisorLine border-x-transparent bg-menuBg`}>
+          <div id="monthlyProgramMenu" className={`${isMonthlyOpen?'h-60 p-4':'h-0 p-0'} gap-4 overflow-clip menuPanel flex flex-col transition-all duration-150 mt-1 w-100% 2xl:w-80% border-solid border-1px border-y-white80 border-x-transparent bg-menuBg`}>
             <ProgramMenu/>
           </div>
         </div>
@@ -50,7 +50,7 @@ const EnrollNow = () => {
               <img id="quaterly"  onClick={toggleQuarterlyMenu} className="absolute right-0 opacity-80 hover:opacity-100 hover:cursor-pointer" src="/rightPointed.svg" alt="rightPointed icon" />
             </div>
           </div>
-          <div id="quaterlyProgramMenu" className={`${isQuarterlyOpen?'h-60 p-4':'h-0 p-0 '}  gap-4 overflow-clip menuPanel flex flex-col transition-all duration-150 mt-1 w-100% 2xl:w-80% border-solid border-1px border-y-divisorLine border-x-transparent bg-menuBg`} >
+          <div id="quaterlyProgramMenu" className={`${isQuarterlyOpen?'h-60 p-4':'h-0 p-0 '}  gap-4 overflow-clip menuPanel flex flex-col transition-all duration-150 mt-1 w-100% 2xl:w-80% border-solid border-1px border-y-white80 border-x-transparent bg-menuBg`} >
           <ProgramMenu/>
           </div>
         </div>
@@ -64,7 +64,7 @@ const EnrollNow = () => {
               <img id="semiAnnually" onClick={toggleSemiAnnuallyMenu} className="absolute right-0 opacity-80 hover:opacity-100 hover:cursor-pointer" src="/rightPointed.svg" alt="rightPointed icon" />
             </div>
           </div>
-          <div id="semiAnnuallyProgramMenu" className={` ${isSemiAnnuallyOpen?'h-60 p-4':'h-0 p-0'} gap-4 overflow-clip menuPanel flex flex-col transition-all duration-150 mt-1 w-100% 2xl:w-80% border-solid border-1px border-y-divisorLine border-x-transparent bg-menuBg`}>
+          <div id="semiAnnuallyProgramMenu" className={` ${isSemiAnnuallyOpen?'h-60 p-4':'h-0 p-0'} gap-4 overflow-clip menuPanel flex flex-col transition-all duration-150 mt-1 w-100% 2xl:w-80% border-solid border-1px border-y-white80 border-x-transparent bg-menuBg`}>
           <ProgramMenu/>
           </div>
         </div>
@@ -78,7 +78,7 @@ const EnrollNow = () => {
               <img id="yearly" onClick={toggleAnnuallyMenu} className="absolute right-0 opacity-80 hover:opacity-100 hover:cursor-pointer " src="/rightPointed.svg" alt="rightPointed icon" />
             </div>
           </div>
-          <div id="yearlyProgramMenu" className={`${isAnnuallyOpen?'h-60 p-4':'h-0 p-0'} gap-4 overflow-clip menuPanel flex flex-col transition-all duration-150 mt-1 w-100% 2xl:w-80% border-solid border-1px border-y-divisorLine border-x-transparent bg-menuBg`}>
+          <div id="yearlyProgramMenu" className={`${isAnnuallyOpen?'h-60 p-4':'h-0 p-0'} gap-4 overflow-clip menuPanel flex flex-col transition-all duration-150 mt-1 w-100% 2xl:w-80% border-solid border-1px border-y-white80 border-x-transparent bg-menuBg`}>
           <ProgramMenu/>
           </div>
         </div>

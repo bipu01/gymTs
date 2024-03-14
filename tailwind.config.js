@@ -13,9 +13,12 @@ export default {
       colors: {
         "bg": "#0B0D23",
         "secondary": "rgba(128,137,238,0.1)",
-        "enrollBorder": "rgba(255,255,255,0.5)",
-        "divisorLine": "rgba(255,255,255,0.8)",
+        "white50": "rgba(255,255,255,0.5)",
+        "white80": "rgba(255,255,255,0.8)",
         "menuBg": "rgba(81,87,135,0.25)",
+        "activeBtnStart": "#551FFA",
+        "activeBtnMid": "#544CFB",
+        "activeBtnEnd": "#540FCB",
       },
       dropShadow: {
         "3xl": "0 35px 35px rgba(0, 0, 0, 0.25)",
