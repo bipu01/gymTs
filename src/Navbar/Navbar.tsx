@@ -37,7 +37,7 @@ const Navbar = () => {
 
 
   return (
-    <header className={` fixed bg-bg backdrop-blur-lg bg-opacity-90 top-0 z-30 w-screen ${requiresPadding} h-8vh pt-4 px-2  sm:px-8 xl:px-10% 2xl:px-20vw`}>
+    <header className={` fixed bg-bg backdrop-blur-lg bg-opacity-85 top-0 z-30 w-screen ${requiresPadding} h-8vh pt-4 px-2  sm:px-8 xl:px-10% 2xl:px-20vw`}>
         <nav className=" float-right ">
             <ul className="flex space-x-3 sm:space-x-10 text-sm sm:text-lg whitespace-nowrap">
               <Link to={"/"}>
