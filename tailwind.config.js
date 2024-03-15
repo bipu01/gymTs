@@ -144,5 +144,17 @@ export default {
       filter: ["responsive"],
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".placeholder-top-left": {
+          "::placeholder": {
+            "text-align": "left",
+            "padding-left": "5px",
+          },
+        },
+      };
+      addUtilities(newUtilities, ["responsive"]);
+    },
+  ],
 };
