@@ -1,4 +1,4 @@
-import { requiresMargin } from "../../declaratiionVariables"
+import { marginForEnrollPrograms, marginForSubTestsHeading } from "../../declaratiionVariables"
 import ProgramMenu from "../../components/ProgramMenu";
 import {useState } from "react";
 
@@ -52,12 +52,12 @@ const EnrollNow = () => {
   };
 
   return (
-    <div className={`${requiresMargin} pb-20vh h-100vh overflow-y-auto overflow-x-hidden pt-10vh relative`}>
+    <div className={` pb-20vh h-100vh overflow-y-auto overflow-x-hidden pt-15vh relative`}>
       <img src="/upperBlob.svg" alt="" className="absolute top-0% xmd:-top-20% w-80vw -right-20% xmd:-right-5vw"/>
       <img src="/bottomBlob.svg" alt="" className="absolute top-65% w-80vw -left-30vw"/>
             
-      <h1 className="text-2xl xmd:3xl mb-5vh text-orange-400 font-bold">Our plans:</h1>
-      <div className="relative z-10 flex flex-col border-solid rounded-2xl border-2 border-white50 p-2 py-8 xmd:py-12 xmd:p-10  gap-8 xmd:gap-12 ">
+      <h1 className={`${marginForSubTestsHeading} text-2xl  mb-5vh text-orange-400 font-bold`}>Our plans:</h1>
+      <div className={`${marginForEnrollPrograms} relative z-10 flex flex-col border-solid rounded-2xl border-2 border-white50 p-8 py-8 xmd:py-12 xmd:px-10 gap-8 xmd:gap-12 `}>
         
         <div id="monthly" onClick={toggleMonthlyMenu}>
           <div className="flex items-center">
