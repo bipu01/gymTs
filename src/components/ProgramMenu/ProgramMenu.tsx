@@ -1,5 +1,8 @@
+import {SecondaryButton } from "../Buttons"
 
 const ProgramMenu = () => {
+  // const 
+
   return (
     <>
       <div className="">
@@ -14,9 +17,17 @@ const ProgramMenu = () => {
         <p className="opacity-50 text-xs xmd:text-sm">(*for id card)</p>
       </div>
       <div>
-      <label htmlFor="select">
-        <input type="file" accept="image/*" id="select"/>
-      </label>
+        
+        <div className="w-95% xmd:w-35%">
+          <label htmlFor="select" className="cursor-pointer">
+            <input type="file" accept="image/*" id="select" className="" hidden/>
+            <div className=" bg-[url('/imgPlaceholder.png')] border-dashed border-2 mb-4 rounded-xl h-32 p-4">
+              <p className="opacity-80">Drag and drop here or browse</p>
+            </div>
+
+            <SecondaryButton text="Checkout" />
+          </label>
+        </div>
       </div>
     </>
   )

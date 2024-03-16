@@ -6,6 +6,10 @@ export type activeBtnProp ={
     text:string,
     styled:boolean
 }
+export type imageProp={
+    src:string,
+    alt:string
+}
 
 export type bodyProp ={
     paragraph: string,

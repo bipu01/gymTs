@@ -1,7 +1,13 @@
+import { Link } from "react-router-dom"
 import { PrimaryButton, SecondaryButton } from "../../Buttons"
+import ImageComponent from "../../ImageComponent"
 
 
 const HeroPart = () => {
+    const setContactUsActive  = () => {
+        localStorage.setItem("activePage","/contactUs")
+    };
+   
   return (
     <section className="relative mb-25vh xmd:mb-5vh mt-3vh">
         <img src="/upperBlob.svg" alt="" className="absolute -top-0% xmd:-top-20% w-80vw -right-20% xmd:-right-5vw"/>
@@ -10,17 +16,22 @@ const HeroPart = () => {
 
         <div className={`grid grid-rows-3 xmd:grid-cols-2 gap-9vh xmd:gap-0 relative z-20   px-2 sm:px-8 lg:px-0 xl:mx-10vw 2xl:mx-10vw` }>
             <div className=" w-70%  xmd:w-auto z-30">
-                <h1 className="text-4xl md:text-5xl 2xl:text-6xl w-95% h-10 font-bold opacity-90 tracking-wider" > Just think one day at a time</h1>
+                <h1 className="text-4xl md:text-5xl 2xl:text-6xl w-95% h-10 font-bold opacity-80 tracking-wider" > Just think one day at a time</h1>
             </div>
 
             <div className=" row-span-2 2xl:h-imageAt3xl z-10 xl:relative overflow-hidden">
                 <div className={`absolute overflow-hidden left-25% top-5vh xmd:static xmd:w-100% h-30vh w-80vw brightness-50 rounded-tl-3xl 
                                 rounded-bl-3xl object-cover xl:absolute xl:top-0 xl:h-100% xl:left-0% grid grid-cols-4
                                 gap-2 lg:gap-3`}>
-                    <img loading="lazy" src="/landingImg1.jpeg" alt="Personal Trainer" className="object-cover h-100%" />
-                    <img loading="lazy" src="/landingImg-3.jpeg" alt="Personal Trainer" className="object-cover h-100%" />
-                    <img loading="lazy" src="/landingImg-4.webp" alt="Personal Trainer" className="object-cover h-100%" />
-                    <img loading="lazy" src="/landingImg2.jpeg" alt="Personal Trainer" className="object-cover h-100%" />
+                    
+                    <ImageComponent src="/landingImg1.jpeg" alt="Personal Trainer"/>
+                    <ImageComponent src="/landingImg-3.jpeg" alt="Personal Trainer"/>
+                    <ImageComponent src="/landingImg-4.webp" alt="Personal Trainer"/>
+                    <ImageComponent src="/landingImg2.jpeg" alt="Personal Trainer"/>
+                    {/* <img loading="lazy" src="/landingImg1.jpeg" alt="Personal Trainer" className="object-cover h-100%" /> */}
+                    {/* <img loading="lazy" src="/landingImg-3.jpeg" alt="Personal Trainer" className="object-cover h-100%" /> */}
+                    {/* <img loading="lazy" src="/landingImg-4.webp" alt="Personal Trainer" className="object-cover h-100%" />
+                    <img loading="lazy" src="/landingImg2.jpeg" alt="Personal Trainer" className="object-cover h-100%" /> */}
                 </div>
             </div>
 
@@ -37,8 +48,10 @@ const HeroPart = () => {
                     </p>
                 </div>
                 <div className={`mt-8 flex gap-4`}>
-                    <PrimaryButton text={"Enroll now"}/>
-                    <SecondaryButton text="See more"/>
+                    <PrimaryButton text={"Apply Now"}/>
+                    <Link to={"/contactUs"} onClick={setContactUsActive} >
+                        <SecondaryButton text="Customer care"/>
+                    </Link>
                 </div>
             </div>
         </div>

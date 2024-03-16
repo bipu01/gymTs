@@ -11,7 +11,10 @@ const LandingPage = () => {
   },[])
   return (
     <section className="py-10vh">
-      <HeroPart/>
+      
+        {/* Hero section */}
+        <HeroPart/>
+
         {/* For Personal trainer */}
         <PersonalTrainer    heading="Get your" 
                         highlitedText="personal trainer"
