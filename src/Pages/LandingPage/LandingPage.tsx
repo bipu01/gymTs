@@ -3,6 +3,7 @@ import PersonalTrainer from "../../components/BodyComponents/PersonalTrainer"
 import ProgramsWeOffer from "../../components/BodyComponents/ProgramsWeOffer"
 
 import { requiresMargin } from "../../declaratiionVariables"
+import HeroPart from "../../components/BodyComponents/HeroPart"
 
 const LandingPage = () => {
   useEffect(()=>{
@@ -10,6 +11,7 @@ const LandingPage = () => {
   },[])
   return (
     <section className="py-10vh">
+      <HeroPart/>
         {/* For Personal trainer */}
         <PersonalTrainer    heading="Get your" 
                         highlitedText="personal trainer"

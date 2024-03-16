@@ -12,7 +12,7 @@ const ProgramsWeOffer = (prop:programsWeOfferProps) => {
                 <img src="/bottomBlob.svg" alt="" className="absolute -top-45% xmd:-top-60% w-70vw -left-30% "/>
                 <div className={` xmd:grid xmd:grid-cols-2 grid-rows-2 ${requiresMargin}`}>
                     <div className=" mb-10">
-                        <h1 className="text-2xl md:text-4xl font-bold opacity-90" > {prop.heading}
+                        <h1 className="text-2xl md:text-4xl font-bold opacity-90 tracking-wide xmd:tracking-widest" > {prop.heading}
                             <div className="text-orange-400 ">
                                 {prop.highlitedText}
                             </div>
