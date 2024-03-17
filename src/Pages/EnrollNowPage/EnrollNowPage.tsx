@@ -17,11 +17,12 @@ const EnrollNow = () => {
     setMonthly({Open:true, isIconRotated:true})
   },[])
 
-  const toggleMonthlyMenu = (e:React.MouseEvent) => {
+  const toggleMonthlyMenu = (e:React.MouseEvent<HTMLDivElement>) => {
     setMonthly((prev)=>({
       Open:!prev.Open,
       isIconRotated:!prev.isIconRotated
     }))
+    // console.log(monthly.isIconRotated)
     rotateIcon(`${e.currentTarget.id}Icon`, monthly.isIconRotated)
   };
   const toggleQuarterlyMenu = (e:React.MouseEvent) => {
@@ -63,8 +64,8 @@ const EnrollNow = () => {
       <h1 className={`${marginForSubTestsHeading} text-2xl  mb-5vh text-orange-400 font-bold`}>Our plans:</h1>
       <div className={`${marginForEnrollPrograms} relative z-10 flex flex-col border-solid rounded-2xl border-2 border-white50 p-8 py-8 xmd:py-12 xmd:px-10 gap-8 xmd:gap-12 `}>
         
-        <div id="monthly">
-          <div className="flex items-center cursor-pointer"  onClick={toggleMonthlyMenu}>
+        <div>
+          <div id="monthly" className="flex items-center cursor-pointer"  onClick={toggleMonthlyMenu}>
             <h1 className="text-sm xmd:text-2xl opacity-80 w-16 flex-auto">Monthly</h1>
             <h2 className={`text-sm xmd:text-xl w-12 whitespace-nowrap flex-auto ${monthly.Open?"opacity-80":"opacity-50"}`}>28 days</h2>
             <div className="flex gap-1 sm:gap-4 flex-auto relative ">
@@ -77,8 +78,8 @@ const EnrollNow = () => {
           </div>
         </div>
 
-        <div id="quaterly">
-          <div className="flex items-center cursor-pointer"  onClick={toggleQuarterlyMenu}>
+        <div>
+          <div id="quaterly" className="flex items-center cursor-pointer"  onClick={toggleQuarterlyMenu}>
             <h1 className="text-sm xmd:text-2xl opacity-80 w-16 flex-auto">Quarterly</h1>
             <h2 className={`text-xs xmd:text-xl w-12 whitespace-nowrap flex-auto ${quarterly.Open?"opacity-80":"opacity-50"}`}>3 months</h2>
             <div className="flex gap-1 sm:gap-4 flex-auto relative">
@@ -91,8 +92,8 @@ const EnrollNow = () => {
           </div>
         </div>
 
-        <div id="semiAnnually" >
-          <div className="flex items-center cursor-pointer" onClick={toggleSemiAnnuallyMenu}>
+        <div >
+          <div id="semiAnnually" className="flex items-center cursor-pointer" onClick={toggleSemiAnnuallyMenu}>
             <h1 className="text-sm xmd:text-2xl opacity-80 w-16 flex-auto">Semi-annually</h1>
             <h2 className={`text-xs xmd:text-xl w-12 whitespace-nowrap flex-auto ${semiAnnually.Open?"opacity-80":"opacity-50"}`}>6 months</h2>
             <div className="relative flex gap-1 sm:gap-4 flex-auto">
@@ -105,8 +106,8 @@ const EnrollNow = () => {
           </div>
         </div>
 
-        <div id="annually">
-          <div className="flex items-center cursor-pointer"  onClick={toggleAnnuallyMenu}>
+        <div>
+          <div  id="annually" className="flex items-center cursor-pointer"  onClick={toggleAnnuallyMenu}>
             <h1 className="text-sm xmd:text-2xl opacity-80 w-16 whitespace-nowrap flex-auto">Annually</h1>
             <h2 className={`text-xs xmd:text-xl w-12 whitespace-nowrap flex-auto ${annually.Open?"opacity-80":"opacity-50"} `}>12 months</h2>
             <div className="relative flex gap-1 sm:gap-4 flex-auto items-center">

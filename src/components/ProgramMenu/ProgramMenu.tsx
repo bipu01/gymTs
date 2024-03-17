@@ -1,7 +1,22 @@
 import {SecondaryButton } from "../Buttons"
 
 const ProgramMenu = () => {
-  // const 
+  // const inputFile= document.getElementById("inputFile");
+  const imgPreview = document.getElementById("img-preview")
+  
+  const handleChange  = (e:React.ChangeEvent<HTMLInputElement>) => {
+    const inputFile= e.currentTarget;
+    if(inputFile.files && inputFile.files[0]){
+
+      const imageSrc= URL.createObjectURL(inputFile.files[0])
+      if(imgPreview){
+        imgPreview.style.backgroundImage = `url(${imageSrc})`;
+        (imgPreview.firstChild as HTMLDivElement ).style.visibility= "hidden";
+      }
+    }
+
+    // console.log(inputFile?.files?.[0].name)
+  };
 
   return (
     <>
@@ -19,9 +34,9 @@ const ProgramMenu = () => {
       <div>
         
         <div className="w-95% xmd:w-35%">
-          <label htmlFor="select" className="cursor-pointer">
-            <input type="file" accept="image/*" id="select" className="" hidden/>
-            <div className=" bg-[url('/imgPlaceholder.png')] border-dashed border-2 mb-4 rounded-xl h-32 p-4">
+          <label htmlFor="inputFile" className="cursor-pointer">
+            <input type="file" accept="image/*" id="inputFile" className="" onChange={handleChange} hidden/>
+            <div id="img-preview" className=" bg-[url('/imgPlaceholder.png')] border-dashed border-2 mb-4 rounded-xl h-32 p-4 bg-cover">
               <p className="opacity-80">Drag and drop here or browse</p>
             </div>
 
