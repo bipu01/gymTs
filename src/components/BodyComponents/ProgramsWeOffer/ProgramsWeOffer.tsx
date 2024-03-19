@@ -31,7 +31,6 @@ const ProgramsWeOffer = (prop:programsWeOfferProps) => {
               <div className={`relative bg-secondary border-solid border-y-2 border-secondary mt-4 md:mt-10vh w-100vw z-10 ${requiresPadding} `}>
                     <div className="flex gap-2 ">
                         <h3 className=" text-xl">Weight lifting Time schedule:</h3>
-                        <img src="/rightPointed.svg" alt="right pointed arrow" className=" w-6 opacity-80 hover:opacity-100 hover:w-8 transition-all" />
                     </div>
 
                     <div id="timing" className="flex gap-8 xmd:gap-14 text-sm xmd:text-lg opacity-50 mt-4 whitespace-nowrap overflow-x-scroll overflow-y-visible" >
