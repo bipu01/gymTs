@@ -2,6 +2,7 @@ import {  pseudoLinesForTime, requiresMargin, requiresPadding } from "../../../d
 import {  programsWeOfferProps } from "../../../declaration"
 import { PrimaryButton } from "../../Buttons"
 import TrainerCard from "../../Cards/TrainerCards"
+import { HeroImageComponent } from "../../ImageComponent"
 
 const ProgramsWeOffer = (prop:programsWeOfferProps) => {
     return (
@@ -19,7 +20,7 @@ const ProgramsWeOffer = (prop:programsWeOfferProps) => {
                         </h1>
                     </div>
                     <div className="row-span-2 col-span-1 max-h-72 xmd:max-h-100vh overflow-hidden z-20 xl:relative xl:overflow-visible">
-                        <img src={prop.heroImg} loading="lazy" alt="Personal Trainer" className="object-cover xl:absolute xl:h-96 rounded-sm"/>
+                        <HeroImageComponent src={prop.heroImg} alt="Hero Image"/>
                     </div>
                     <div className=" mt-4 xmd:mt-0 xmd:w-80%">
                         <p className=" text-sm opacity-70 lg:text-lg">

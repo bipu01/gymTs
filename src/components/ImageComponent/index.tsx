@@ -1,1 +1,1 @@
-export {default} from "./ImageComponent"
+export {ImageComponent, HeroImageComponent} from "./ImageComponent"

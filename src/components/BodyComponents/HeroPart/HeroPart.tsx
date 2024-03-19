@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { PrimaryButton, SecondaryButton } from "../../Buttons"
-import ImageComponent from "../../ImageComponent"
+import {ImageComponent} from "../../ImageComponent"
 
 
 const HeroPart = () => {

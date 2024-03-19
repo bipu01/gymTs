@@ -2,7 +2,7 @@ import { bodyProp } from "../../../declaration"
 import { PrimaryButton } from "../../Buttons"
 import TrainerCard from "../../Cards/TrainerCards"
 import { requiresMargin, requiresPadding } from "../../../declaratiionVariables"
-import ImageComponent from "../../ImageComponent"
+import { HeroImageComponent} from "../../ImageComponent"
 
 
 const PersonalTrainer = (prop:bodyProp) => {
@@ -23,7 +23,7 @@ const PersonalTrainer = (prop:bodyProp) => {
                         </h1>
                     </div>
                     <div className="row-span-2 xmd:row-span-2 overflow-hidden 2xl:h-imageAt3xl z-20 xl:relative xl:overflow-visible">
-                        <ImageComponent src="personalTrainerLarge.png" alt="personalTrainer" />
+                        <HeroImageComponent src="personalTrainerLarge.png" alt="personalTrainer" />
                         {/* <img loading="lazy" src="/personalTrainerLarge.png" alt="Personal Trainer" className="object-cover xl:absolute xl:h-96 rounded-sm " /> */}
                     </div>
                     <div className=" mt-4 xmd:mt-0 w-90%">
