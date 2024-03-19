@@ -7,6 +7,10 @@ export default {
         "1px": "1px",
         "2px": "2px",
       },
+      brightness: {
+        "60": "0.6",
+        "70": "0.7",
+      },
       filter: {
         "blur": "blur(100px)",
       },

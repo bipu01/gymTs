@@ -16,11 +16,11 @@ const HeroPart = () => {
 
         <div className={`grid grid-rows-3 xmd:grid-cols-2 gap-9vh xmd:gap-0 relative z-20   px-2 sm:px-8 lg:px-0 xl:mx-10vw 2xl:mx-10vw` }>
             <div className=" w-70%  xmd:w-auto z-30">
-                <h1 className="text-4xl md:text-5xl 2xl:text-6xl w-95% h-10 font-bold opacity-80 tracking-wider" > Just think one day at a time</h1>
+                <h1 className="text-4xl md:text-5xl 2xl:text-6xl w-95% h-10 font-bold opacity-100 tracking-wider" > Just think one day at a time</h1>
             </div>
 
             <div className=" row-span-2 2xl:h-imageAt3xl z-10 xl:relative overflow-hidden">
-                <div className={`absolute overflow-hidden left-25% top-5vh xmd:static xmd:w-100% h-30vh w-80vw brightness-50 rounded-tl-3xl 
+                <div className={`absolute overflow-hidden left-25% top-5vh xmd:static xmd:w-100% h-30vh w-80vw brightness-75 rounded-tl-3xl 
                                 rounded-bl-3xl object-cover xl:absolute xl:top-0 xl:h-100% xl:left-0% grid grid-cols-4
                                 gap-2 lg:gap-3`}>
                     
