@@ -20,7 +20,7 @@ const HeroPart = () => {
             </div>
 
             <div className=" row-span-2 2xl:h-imageAt3xl z-10 xl:relative overflow-hidden">
-                <div className={`absolute overflow-hidden left-25% top-5vh xmd:static xmd:w-100% h-30vh w-80vw brightness-75 rounded-tl-3xl 
+                <div className={`absolute overflow-hidden left-25% top-5vh xmd:static xmd:w-100% h-30vh w-80vw brightness-75 xmd:brightness-100 rounded-tl-3xl 
                                 rounded-bl-3xl object-cover xl:absolute xl:top-0 xl:h-100% xl:left-0% grid grid-cols-4
                                 gap-2 lg:gap-3`}>
                     
